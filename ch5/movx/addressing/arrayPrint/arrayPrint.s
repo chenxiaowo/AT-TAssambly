@@ -1,3 +1,4 @@
+#To learn how to access array data in data section.
 .code32
 .section .data
   output:
