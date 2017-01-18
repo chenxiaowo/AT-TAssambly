@@ -1,4 +1,5 @@
-.seciton .data
+.code32
+.section .data
   output:
     .asciz "The value is %d\n"
   values:
@@ -14,3 +15,9 @@ loop:
   pushl $output
   call printf
   addl $8,%esp
+  inc %edi
+  cmpl $11,%edi
+  jne loop
+  movl $0,%ebx
+  movl $1,%eax
+  int $0x80
