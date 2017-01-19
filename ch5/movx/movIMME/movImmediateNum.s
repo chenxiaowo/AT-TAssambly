@@ -1,5 +1,5 @@
 .section .data
-  .long height
+  .comm height,4
 .section .text
 .globl _start
 _start:

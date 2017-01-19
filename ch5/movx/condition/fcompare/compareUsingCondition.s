@@ -6,8 +6,13 @@
   .globl _start
   _start:
   movl $1,%eax
-  movl $0,%ebx
+  movl $2,%ebx
   cmp %eax,%ebx
   movl %eax,%ecx
   cmova %ebx,%ecx
-  push
+  pushl %ecx
+  pushl $output
+  call printf
+  addl $8,%esp
+  pushl $0
+  call exit
