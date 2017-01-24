@@ -1,3 +1,4 @@
+#定义不同类型的数据和数组
 .section .data
 	pi:
 		.float 3.14159

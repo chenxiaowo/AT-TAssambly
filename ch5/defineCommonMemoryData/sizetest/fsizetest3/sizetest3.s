@@ -1,3 +1,4 @@
+#这里是对于使用完全填充的内存数据区
 .section .data
 buffer:
   .fill 10000
